@@ -20,18 +20,28 @@ namespace WindowsFormsApp1
 
         private void actionButton_Click(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "クリックされました";
+            int one = 1;
+            int three = 3;
+            int four = one + three;
+
+            four++;
+            four++;
+            four--;
+            this.MessageLabel.Text = four.ToString();
         }
 
 
         private void actionButton_MouseHover(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "マウスが乗りました";
+           
         }
 
         private void actionButton_MouseLeave(object sender, EventArgs e)
         {
-            this.MessageLabel.Text = "マウスがおりました";
+            string hello = "こんにちは";
+            string goodNight = "こんばんは";
+
+            this.MessageLabel.Text = hello + goodNight;
         }
     }
 }
